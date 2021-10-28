@@ -1,0 +1,236 @@
+$ancho:800px;
+@mixin margins($margin,$padding) {
+    padding: $padding;
+    margin: $margin;
+}
+@mixin fonts($fontsize,$fontweight) {
+    font-size: $fontsize;
+    font-weight: $fontweight;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media only screen and (max-width: 320px) {
+    header{
+        h1{
+            color: fuchsia;
+            font-size: 25px;
+        }
+    }
+    main{
+        section{
+            h3{
+                @include margins(10px,auto);
+                @include fonts(25px,normal);
+                color: fuchsia;
+                text-align: center; 
+            }
+            p{
+                @include margins(15px,auto);
+                @include fonts(15px,bold);
+                color: $bg_letras;
+                word-spacing: 10px;
+                letter-spacing: 1px;
+                line-height: 1.5;
+                text-align: justify;
+            }
+        }
+        .Planes{
+            h2{
+                @include margins(10px,auto);
+                @include fonts(28px,bold);
+                color: fuchsia;
+                font-style: italic;
+                text-align: center; 
+            }
+        }
+        .table-responsive{
+                @include fonts(10px,normal);
+        }
+    }
+}  
+@media only screen and (min-width: 768px) {
+    header{
+        h1{
+            color: darkgreen;
+            font-size: 28px;
+        }
+    }
+    main{
+        section{
+            h3{
+                @include margins(10px,auto);
+                @include fonts(25px,normal);
+                color: darkgreen;
+                text-align: center;
+            }
+            p{
+                @include margins(15px,auto);
+                @include fonts(17px,bold);
+                color: $bg_letras;
+                word-spacing: 10px;
+                letter-spacing: 1px;
+                line-height: 1.5;
+                text-align: justify;
+            }
+        }
+        .Planes{
+            h2{
+                @include margins(10px,auto);
+                @include fonts(32px,bold);
+                color: darkgreen;
+                font-style: italic;
+                text-align: center; 
+            }
+        }
+        .seccionesDeDescripcion{
+            @include margins(30px auto,20px);
+            width: ($ancho/2);
+            border: 2px solid navy;
+            outline: 4px solid $bg_letrasClaras;
+        }
+        .servicios{
+            ul{
+                @include margins(30px,10px);
+                @include fonts(15px,bold);
+                list-style-type: square;
+                list-style-position: inside;
+                color: $bg_letras;
+                line-height: 1.5;
+            }       
+        }
+        .contenedor{
+            @include margins(10px auto,2rem);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }   
+}   
+@media only screen and (min-width: 768px) {
+    header{
+        h1{
+            color: red;
+            font-size: 36px;
+        }
+    }
+    main{
+        section{
+            h3{
+                @include margins(10px,auto);
+                @include fonts(36px,normal);
+                color: red;
+                text-align: center;
+            }
+            p{
+                @include margins(15px,auto);
+                @include fonts(20px,bold);
+                color: $bg_letras;
+                word-spacing: 10px;
+                letter-spacing: 1px;
+                line-height: 1.5;
+                text-align: justify;
+            }
+        }
+        .Planes{
+            h2{
+                @include margins(10px,auto);
+                @include fonts(32px,bold);
+                color: red;
+                font-style: italic;
+                text-align: center; 
+                }
+        }
+        .seccionesDeDescripcion{
+            @include margins(40px auto,20px);
+            width: ($ancho)-100;
+            border: 2px solid navy;
+            outline: 4px solid $bg_letrasClaras;
+        }
+        .servicios{
+            ul{
+                @include margins(30px,10px);
+                @include fonts(20px,bold);
+                list-style-type: square;
+                list-style-position: inside;
+                color: $bg_letras;
+                line-height: 1.5;
+            }       
+        }
+        .contenedor{
+            @include margins(10px auto,2rem);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }   
+    }      
+}
+@media only screen and (min-width: 1024px) {
+    header{
+        h1{
+            color: $bg_letras;
+            font-size: 46px;
+        }
+    }
+    main{
+        section{
+            h3{
+                @include margins(10px,auto);
+                @include fonts(46px,normal);
+                color: $bg_letras;
+                text-align: center;
+            }
+            p{
+                @include margins(15px,auto);
+                @include fonts(25px,bold);
+                color: $bg_letras;
+                word-spacing: 10px;
+                letter-spacing: 1px;
+                line-height: 1.5;
+                text-align: justify;
+            }
+        }
+        .Planes{
+            h2{
+                @include margins(10px,auto);
+                @include fonts(xxx-large,bold);
+                color: $bg_letras;
+                font-style: italic;
+                text-align: center; 
+                }
+        }
+        .seccionesDeDescripcion{
+            @include margins(80px auto,20px);
+            width: ($ancho);
+            border: 2px solid navy;
+            outline: 4px solid $bg_letrasClaras;
+        }
+        .servicios{
+            ul{
+                @include margins(30px,10px);
+                @include fonts(25px,bold);
+                list-style-type: square;
+                list-style-position: inside;
+                color: $bg_letras;
+                line-height: 1.5;
+            }       
+        }            
+    }
+    .containerNovedades{
+        h4{
+            @include margins(10px,auto);
+            @include fonts(25px,normal);
+            color: $bg_letras;
+            text-align: center; 
+        }
+        p{
+            @include margins(15px,auto);
+            @include fonts(15px,normal);
+            color: $bg_letras;
+            word-spacing: 5px;
+            letter-spacing: 0.5px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+    }               
+}

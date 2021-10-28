@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #36096d;
+  background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%); }
+
+header animaciones, header h1, header h2 {
+  animation-duration: 5s;
+  animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+header .micolor {
+  background-color: #100f66; }
+
+header nav .TextoLogo {
+  font-size: xx-large;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  margin-left: 20px; }
+
+header nav .textoBarra {
+  font-weight: bold; }
+
+header h1 {
+  font-size: xx-large;
+  font-weight: normal;
+  color: #100f66;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: 'Fredoka One', cursive;
+  padding-top: 20px; }
+
+header h2 {
+  font-size: 55px;
+  font-weight: bold;
+  color: #100f66;
+  font-style: italic;
+  margin: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center; }
+
+main section h3 {
+  padding: auto;
+  margin: 10px;
+  font-size: 35px;
+  font-weight: normal;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #100f66;
+  text-align: center; }
+
+main section p {
+  padding: auto;
+  margin: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #100f66;
+  word-spacing: 10px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-align: justify; }
+
+main .Planes h2 {
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #100f66;
+  text-decoration: underline;
+  padding-top: 30px;
+  text-align: center; }
+
+main .seccionesDeDescripcion {
+  height: auto;
+  width: 800px;
+  padding: 20px;
+  margin: 80px auto;
+  border: 2px solid navy;
+  outline: 4px solid aqua;
+  display: block; }
+
+main .scale:hover {
+  transform: scale(1.1, 1); }
+
+main .servicios ul {
+  padding: 10px;
+  margin: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  list-style-type: square;
+  list-style-position: inside;
+  color: #100f66;
+  line-height: 1.5; }
+
+main .contenedor {
+  padding: 2rem;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+main .containerNovedades h4 {
+  padding: auto;
+  margin: 10px;
+  font-size: 25px;
+  font-weight: normal;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #100f66;
+  text-align: center; }
+
+main .containerNovedades p {
+  padding: auto;
+  margin: 15px;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #100f66;
+  word-spacing: 5px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  text-align: justify; }
+
+main .video-centro {
+  padding: 2rem;
+  margin: auto;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+main .form {
+  padding: auto;
+  margin: 30px;
+  color: #100f66;
+  font-weight: bold; }
+
+footer .card p {
+  color: aqua;
+  margin: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: medium; }
+
+footer .card .micolor {
+  background-color: #100f66; }
+
+@media only screen and (max-width: 320px) {
+  header h1 {
+    color: fuchsia;
+    font-size: 25px; }
+  main section h3 {
+    padding: auto;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: fuchsia;
+    text-align: center; }
+  main section p {
+    padding: auto;
+    margin: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #100f66;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align: justify; }
+  main .Planes h2 {
+    padding: auto;
+    margin: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: fuchsia;
+    font-style: italic;
+    text-align: center; }
+  main .table-responsive {
+    font-size: 10px;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; } }
+
+@media only screen and (min-width: 768px) {
+  header h1 {
+    color: darkgreen;
+    font-size: 28px; }
+  main section h3 {
+    padding: auto;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkgreen;
+    text-align: center; }
+  main section p {
+    padding: auto;
+    margin: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #100f66;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align: justify; }
+  main .Planes h2 {
+    padding: auto;
+    margin: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkgreen;
+    font-style: italic;
+    text-align: center; }
+  main .seccionesDeDescripcion {
+    padding: 20px;
+    margin: 30px auto;
+    width: 400px;
+    border: 2px solid navy;
+    outline: 4px solid aqua; }
+  main .servicios ul {
+    padding: 10px;
+    margin: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style-type: square;
+    list-style-position: inside;
+    color: #100f66;
+    line-height: 1.5; }
+  main .contenedor {
+    padding: 2rem;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; } }
+
+@media only screen and (min-width: 768px) {
+  header h1 {
+    color: red;
+    font-size: 36px; }
+  main section h3 {
+    padding: auto;
+    margin: 10px;
+    font-size: 36px;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+    text-align: center; }
+  main section p {
+    padding: auto;
+    margin: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #100f66;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align: justify; }
+  main .Planes h2 {
+    padding: auto;
+    margin: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+    font-style: italic;
+    text-align: center; }
+  main .seccionesDeDescripcion {
+    padding: 20px;
+    margin: 40px auto;
+    width: 700px;
+    border: 2px solid navy;
+    outline: 4px solid aqua; }
+  main .servicios ul {
+    padding: 10px;
+    margin: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style-type: square;
+    list-style-position: inside;
+    color: #100f66;
+    line-height: 1.5; }
+  main .contenedor {
+    padding: 2rem;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; } }
+
+@media only screen and (min-width: 1024px) {
+  header h1 {
+    color: #100f66;
+    font-size: 46px; }
+  main section h3 {
+    padding: auto;
+    margin: 10px;
+    font-size: 46px;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #100f66;
+    text-align: center; }
+  main section p {
+    padding: auto;
+    margin: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #100f66;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align: justify; }
+  main .Planes h2 {
+    padding: auto;
+    margin: 10px;
+    font-size: xxx-large;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #100f66;
+    font-style: italic;
+    text-align: center; }
+  main .seccionesDeDescripcion {
+    padding: 20px;
+    margin: 80px auto;
+    width: 800px;
+    border: 2px solid navy;
+    outline: 4px solid aqua; }
+  main .servicios ul {
+    padding: 10px;
+    margin: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style-type: square;
+    list-style-position: inside;
+    color: #100f66;
+    line-height: 1.5; }
+  .containerNovedades h4 {
+    padding: auto;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #100f66;
+    text-align: center; }
+  .containerNovedades p {
+    padding: auto;
+    margin: 15px;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #100f66;
+    word-spacing: 5px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    text-align: justify; } }

@@ -1,0 +1,98 @@
+main{
+    @mixin sizes($width,$height) {
+        height: $height;
+        width: $width;
+    }
+    @mixin margins($margin,$padding) {
+        padding: $padding;
+        margin: $margin;
+    }
+    @mixin fonts($fontsize,$fontweight) {
+        font-size: $fontsize;
+        font-weight: $fontweight;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    section{
+        h3{
+            @include margins(10px,auto);
+            @include fonts(35px,normal);
+            color: $bg_letras;
+            text-align: center; 
+        }
+        p{
+            @include margins(15px,auto);
+            @include fonts(25px,bold);
+            color: $bg_letras;
+            word-spacing: 10px;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+    }
+    .Planes{
+        h2{
+            @include fonts(xx-large,bold);
+            color: $bg_letras;
+            text-decoration: underline;
+            padding-top: 30px;
+            text-align: center;
+        }
+    }
+    .seccionesDeDescripcion{
+        @include sizes(800px,auto);
+        @include margins(80px auto,20px);
+        border: 2px solid navy;
+        outline: 4px solid $bg_letrasClaras;
+        display: block;
+    }
+    .scale:hover{
+        transform: scale(1.1,1);
+    }
+    .servicios{
+        ul{
+            @include margins(30px,10px);
+            @include fonts(25px,bold);
+            list-style-type: square;
+            list-style-position: inside;
+            color: $bg_letras;
+            line-height: 1.5;
+        }       
+    }
+    .contenedor{
+        @include margins(20px auto,2rem);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    } 
+    .containerNovedades{
+            h4{
+                @include margins(10px,auto);
+                @include fonts(25px,normal);
+                color: $bg_letras;
+                text-align: center; 
+            }
+            p{
+                @include margins(15px,auto);
+                @include fonts(15px,normal);
+                color: $bg_letras;
+                word-spacing: 5px;
+                letter-spacing: 0.5px;
+                line-height: 1.5;
+                text-align: justify;
+            }
+        }  
+    .video-centro{
+        @include margins(auto,2rem);
+        background-color: $bg_letrasClaras;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }    
+    .form{
+        @include margins(30px,auto);
+        color: $bg_letras;
+        font-weight: bold;
+    }    
+}    

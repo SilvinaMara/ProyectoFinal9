@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacte a nuestros profesionales mediante formulario.">
+    <meta name="keywords" content="C&S, Outsourcing, sueldos, liquidación, contacto, formulario, presupuesto, consultora">
+    <link rel="icon" href="img/logoRecursosHumanos.jpg" type="image/ico"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Contacto | C&S Outsourcing</title>
+</head>
+<body>
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-light micolor">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">
+            <img src="img/logoRecursosHumanos.jpg" alt="logoRecursos" width="50px" class="d-inline-block align-text-top">
+            <em class="TextoLogo"> C&S</em> 
+          </a>
+          <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-light textoBarra" aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light textoBarra" href="nosotros.html">QUIENES SOMOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light textoBarra" href="novedades.html">NOVEDADES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light textoBarra" href="servicios.html">NUESTROS SERVICIOS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <h2>CONTACTO</h2> 
+   </header> 
+   <main>
+       <!--Sección de Formulario de Contacto-->
+       <section class="form">
+        <form action="">
+            <fieldset>
+                <legend>Formulario de contacto</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre">
+                </div>
+                <br>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido">
+                </div>
+                <br>
+                <div>
+                    <label for="email">E-mail:*</label>
+                    <input type="email" name="email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="password">Password:*</label>
+                    <input type="password" name="password" required>
+                </div>
+                <br>
+                <div>
+                    <label for="TipoCliente">Categoría de Cliente:</label>
+                    <select name="TipoCliente">
+                        <option value="PROF">Profesional independiente</option>
+                        <option value="ESTUD">Estudio Contable</option>
+                        <option value="PYME">Pyme</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="newsletter">¿Desea recibir el Newsletter?</label>
+                    <input type="checkbox" name="newsletter">
+                </div>
+                <br>
+                <div>
+                    <label for="comentario">Deja tu consulta</label><br>
+                    <textarea name="comentario" id="" cols="55" rows="10"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="enviar datos">
+                    <input type="reset" value="borrar datos">
+                </div>
+            </fieldset>
+        </form>
+       </section>
+       <br>
+   </main>
+   <footer>
+    <div class="card">
+      <div class="card-body micolor">
+        <p>rrhh.consultores@gmail.com</p>
+        <p>01152563754☎</p>
+        <p>@copyright</p>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="nosotros.html">Quiénes somos</a></li>
+            <li class="breadcrumb-item"><a href="servicios.html">Nuestros servicios</a></li>
+            <li class="breadcrumb-item"><a href="novedades.html">Novedades</a></li>
+            <li class="breadcrumb-item"><a href="contacto.html">Contacto</a></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
